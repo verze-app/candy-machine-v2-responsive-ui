@@ -80,7 +80,8 @@ const ConnectButton = styled(WalletMultiButton)`
 `;
 
 const NFT = styled(Paper)`
-  min-width: 500px;
+  min-width: 280px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 5px 20px 20px 20px;
   flex: 1 1 auto;
@@ -176,9 +177,11 @@ const Price = styled(Chip)`
 `;
 
 const Image = styled.img`
-  height: 400px;
+  height: auto;
   width: auto;
+  max-width: 100%;
   border-radius: 7px;
+  object-fit: contain;
   box-shadow: 5px 5px 40px 5px rgba(0, 0, 0, 0.5);
 `;
 
