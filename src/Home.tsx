@@ -51,7 +51,7 @@ const WalletAmount = styled.div`
   box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
   box-sizing: border-box;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.75;
   text-transform: uppercase;
   border: 0;
@@ -172,7 +172,7 @@ const Price = styled(Chip)`
   margin: 5px;
   font-weight: bold;
   font-size: 1.2em !important;
-  font-family: 'Patrick Hand', cursive !important;
+  font-family: Roboto !important;
 `;
 
 const Image = styled.img`
@@ -650,11 +650,11 @@ const Home = (props: HomeProps) => {
                 <MintContainer>
                     <DesContainer>
                         <NFT elevation={3}>
-                            <h2>My NFT</h2>
+                            <h2>Verze Pioneer (Genesis)</h2>
                             <br/>
                             <div><Price
                                 label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/><Image
-                                src="cool-cats.gif"
+                                src="VerzePioneer.png"
                                 alt="NFT To Mint"/></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) && isBurnToken &&
