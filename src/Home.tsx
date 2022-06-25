@@ -655,8 +655,11 @@ const Home = (props: HomeProps) => {
                         <NFT elevation={3}>
                             <h2>Verze Pioneer (Genesis)</h2>
                             <br/>
-                            <div><Price
-                                label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/><Image
+                            <div>
+                                {wallet.connected ?  
+                                <Price
+                                label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/> : ''}
+                                <Image
                                 src="VerzePioneer.png"
                                 alt="NFT To Mint"/></div>
                             <br/>
